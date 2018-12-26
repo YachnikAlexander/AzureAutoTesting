@@ -14,16 +14,11 @@ namespace Belavia.Tests
         private SelectElement arrivalAirports;
         private IWebElement departureAirport;
 
-        [TestInitialize]
-        public void HomePageInitialization()
-        {
-            homePage = new HomePage();
-            homePage.OpenHomePage();
-        }
-
         [TestMethod]
         public void AssertNoSourceAirportInDestinationDropdown()
         {
+            homePage = new HomePage();
+            homePage.OpenHomePage();
             var departureList = homePage.GetDepartureList();
             var arrivalList = homePage.GetArrivalList();
             var exist = departureList.Any(i => i.Text.Equals(arrivalAirports));
