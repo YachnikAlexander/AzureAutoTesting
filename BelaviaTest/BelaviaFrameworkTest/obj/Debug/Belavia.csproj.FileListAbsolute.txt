@@ -1,0 +1,11 @@
+C:\Users\Александр\Desktop\BelaviaTest\BelaviaFrameworkTest\bin\Debug\BelaviaFrameworkTest.dll
+C:\Users\Александр\Desktop\BelaviaTest\BelaviaFrameworkTest\bin\Debug\BelaviaFrameworkTest.pdb
+C:\Users\Александр\Desktop\BelaviaTest\BelaviaFrameworkTest\bin\Debug\WebDriver.dll
+C:\Users\Александр\Desktop\BelaviaTest\BelaviaFrameworkTest\bin\Debug\WebDriver.Support.dll
+C:\Users\Александр\Desktop\BelaviaTest\BelaviaFrameworkTest\bin\Debug\WebDriver.xml
+C:\Users\Александр\Desktop\BelaviaTest\BelaviaFrameworkTest\bin\Debug\WebDriver.Support.xml
+C:\Users\Александр\Desktop\BelaviaTest\BelaviaFrameworkTest\obj\Debug\Belavia.csprojAssemblyReference.cache
+C:\Users\Александр\Desktop\BelaviaTest\BelaviaFrameworkTest\obj\Debug\Belavia.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Desktop\BelaviaTest\BelaviaFrameworkTest\obj\Debug\Belavia.csproj.CopyComplete
+C:\Users\Александр\Desktop\BelaviaTest\BelaviaFrameworkTest\obj\Debug\BelaviaFrameworkTest.dll
+C:\Users\Александр\Desktop\BelaviaTest\BelaviaFrameworkTest\obj\Debug\BelaviaFrameworkTest.pdb
