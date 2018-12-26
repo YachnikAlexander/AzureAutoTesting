@@ -14,7 +14,7 @@ namespace BelaviaFrameworkTest
         private IWebDriver driver;
         private const string Url = "https://belavia.by";
         By cookiesSet = By.Id("set_cookies");
-        By oneWayTicketCheckbox = By.Id("JourneySpan_Ow");
+        By oneWayTicketCheckbox = By.CssSelector("#step-2 > div:nth-child(1) > div > label:nth-child(2)");
         By leavingTicketDate = By.Id("DepartureDate_Datepicker");
         By returnTicketDate = By.Id("ReturnDate_Datepicker");
         By departure = By.XPath("//*[@id='ibe']/form/div[1]/div[1]/div/a");
@@ -23,6 +23,7 @@ namespace BelaviaFrameworkTest
         By arrivalList = By.XPath("//*[@id='ui-id-3']/li");
         By bookingFormSubmitButton = By.XPath("//*[@id='step - 2']/div[4]/div/button");
         By errorsMessages = By.ClassName("messages");
+
 
         private void SelectDeparture()
         {
@@ -82,18 +83,25 @@ namespace BelaviaFrameworkTest
             SetDateTime(GetReturnTicketDate(), DateTime.Now.ToString("dd'/'MM'/'yyyy"));
         }
 
-        public IEnumerable<IWebElement> GetDepartureList()
+        public void ClickField()
         {
             var dep = driver.FindElement(departure);
             dep.Click();
+        }
+        
+        public void ClickSecondField()
+        {
+            var dep = driver.FindElement(arrival);
+            dep.Click();
+        }
+        public IEnumerable<IWebElement> GetDepartureList()
+        {
             var childrens = driver.FindElements(departureList);
             return childrens;
         }
 
         public IEnumerable<IWebElement> GetArrivalList()
         {
-            var dep = driver.FindElement(arrival);
-            dep.Click();
             var childrens = driver.FindElements(arrivalList);
             return childrens;
         }
