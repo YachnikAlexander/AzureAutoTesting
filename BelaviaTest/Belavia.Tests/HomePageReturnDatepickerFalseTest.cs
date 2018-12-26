@@ -15,21 +15,21 @@ namespace Belavia.Tests
         private SelectElement arrivalAirports;
         private IWebElement departureAirport;
 
-        [TestMethod]
-        public void NullTicketReturnDateField()
-        {
-            homePage = new HomePage();
-            homePage.OpenHomePage();
-            homePage.ClickField();
-            homePage.ClickSecondField();
-            Thread.Sleep(2000);
-            homePage.SelectOneWayTicket();
-            var ticketDate = homePage.GetReturnTicketDate();
-            CleanupTest();
-            Thread.Sleep(2000);
-            Assert.AreEqual(false, ticketDate.Displayed);
+        //[TestMethod]
+        //public void NullTicketReturnDateField()
+        //{
+        //    homePage = new HomePage();
+        //    homePage.OpenHomePage();
+        //    homePage.ClickField();
+        //    homePage.ClickSecondField();
+        //    Thread.Sleep(2000);
+        //    homePage.SelectOneWayTicket();
+        //    var ticketDate = homePage.GetReturnTicketDate();
+        //    CleanupTest();
+        //    Thread.Sleep(2000);
+        //    Assert.AreEqual(false, ticketDate.Displayed);
             
-        }
+        //}
 
     }
 }
