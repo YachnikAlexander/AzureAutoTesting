@@ -25,7 +25,6 @@ namespace Belavia.Tests
             var departureList = homePage.GetDepartureList();
             var arrivalList = homePage.GetArrivalList();
             var exist = departureList.Any(i => i.Text.Equals(arrivalAirports));
-            CleanupTest();
             Thread.Sleep(2000);
             Assert.AreEqual(false, exist);
             
